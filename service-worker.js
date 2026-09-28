@@ -1,4 +1,4 @@
-const CACHE_NAME = "mi-pequeno-mundo-v1";
+const CACHE_NAME = "mi-pequeno-mundo-v2";
 
 const ARCHIVOS_APP = [
     "./",
@@ -9,7 +9,8 @@ const ARCHIVOS_APP = [
     "./estilos.css",
     "./script.js",
     "./manifest.json",
-    "./icono-app.png"
+    "./icono-192.png",
+    "./icono-512.png"
 ];
 
 self.addEventListener("install", (event) => {
