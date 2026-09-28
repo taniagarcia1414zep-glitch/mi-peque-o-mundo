@@ -894,3 +894,20 @@ function configurarAlbum() {
 }
 
 configurarAlbum();
+
+// ==========================================
+// SERVICE WORKER - APLICACIÓN INSTALABLE
+// ==========================================
+
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker
+            .register("./service-worker.js")
+            .then(() => {
+                console.log("Aplicación lista para instalar 💗");
+            })
+            .catch((error) => {
+                console.error("Error al registrar Service Worker:", error);
+            });
+    });
+}

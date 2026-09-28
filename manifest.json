@@ -1,0 +1,18 @@
+{
+  "name": "Mi pequeño mundo",
+  "short_name": "Mi pequeño mundo",
+  "description": "Nuestro álbum familiar de recuerdos",
+  "start_url": "./login.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff7fa",
+  "theme_color": "#c27b9d",
+  "icons": [
+    {
+      "src": "icono-app.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
