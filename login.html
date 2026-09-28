@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi pequeño mundo 💗</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="pagina-login">
+
+    <main class="contenedor-login">
+
+        <div class="tarjeta-login">
+
+            <div class="icono-login">🌸</div>
+
+            <p class="subtitulo-login">
+                Un lugar lleno de recuerdos
+            </p>
+
+            <h1>Mi pequeño mundo</h1>
+
+            <p class="mensaje-login">
+                Inicia sesión para entrar a nuestro álbum familiar 💕
+            </p>
+
+            <form id="formLogin">
+
+                <div class="campo-login">
+                    <label for="correo">
+                        💌 Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        placeholder="Tu correo electrónico"
+                        required
+                    >
+                </div>
+
+                <div class="campo-login">
+                    <label for="contrasena">
+                        🔐 Contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="contrasena"
+                        placeholder="Tu contraseña"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="boton-login">
+                    Entrar al álbum 💗
+                </button>
+
+                <p id="mensajeLogin" class="mensaje-error"></p>
+
+            </form>
+
+            <p class="privacidad-login">
+                🔒 Álbum privado para nuestra familia
+            </p>
+
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Antes de conocerte 💕</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="portada-embarazo">
+
+        <a href="index.html" class="boton-volver">
+            ← Volver al álbum
+        </a>
+
+        <div class="contenido-embarazo">
+
+            <span class="icono-embarazo">🤰💕</span>
+
+            <p class="subtitulo">Aquí comenzó tu historia</p>
+
+            <h1>Antes de conocerte</h1>
+
+            <p class="frase-embarazo">
+                Antes de poder tenerte entre nuestros brazos,
+                ya eras parte de nuestras vidas.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="recuerdos-embarazo">
+
+            <h2>Esperándote 💗</h2>
+
+            <p class="descripcion">
+                Fotografías y recuerdos de aquellos meses
+                mientras esperábamos conocerte.
+            </p>
+
+
+            <div class="foto-destacada">
+
+                <div class="espacio-foto">
+                    <span>📷</span>
+
+                    <h3>Nuestra espera</h3>
+
+                    <p>
+                        Aquí podremos colocar una fotografía
+                        muy especial de mamá esperando tu llegada.
+                    </p>
+<input 
+    type="file" 
+    id="inputFotoEmbarazo" 
+    accept="image/*" 
+    hidden
+>
+
+<button 
+    class="boton-agregar"
+    onclick="seleccionarFotoEmbarazo()"
+>
+    ＋ Agregar fotografía
+</button>
+<div class="datos-recuerdo">
+
+    <label for="fechaFoto">
+        📅 Fecha del recuerdo
+    </label>
+
+    <input 
+        type="date" 
+        id="fechaFoto"
+    >
+
+    <label for="descripcionFoto">
+        💕 Escribe un recuerdo
+    </label>
+
+    <textarea
+        id="descripcionFoto"
+        placeholder="Ejemplo: Cada día faltaba menos para conocerte..."
+        maxlength="200"
+    ></textarea>
+
+</div>
+
+                </div>
+
+            </div>
+
+
+            <div class="seccion-galeria">
+
+                <h2>Nuestros recuerdos ✨</h2>
+<div id="galeriaEmbarazo" class="galeria-fotos">
+
+    <div id="mensajeGaleria" class="galeria-vacia">
+        <span>🌸</span>
+
+        <p>
+            Aquí aparecerán todas las fotografías
+            que guardemos de esta etapa.
+        </p>
+    </div>
+
+</div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Una historia que comenzó con mucho amor 💗</p>
+    </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

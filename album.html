@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi álbum 💗</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="portada-embarazo">
+
+        <a href="index.html" class="boton-volver">
+            ← Volver al álbum
+        </a>
+
+        <div class="contenido-embarazo">
+
+            <span id="iconoEtapa" class="icono-embarazo">
+                🍼
+            </span>
+
+            <p class="subtitulo">
+                Un pedacito de tu historia
+            </p>
+
+            <h1 id="tituloEtapa">
+                Mi nacimiento
+            </h1>
+
+            <p id="fraseEtapa" class="frase-embarazo">
+                El día en que por fin pudimos conocerte
+                y tenerte entre nuestros brazos.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="recuerdos-embarazo">
+
+            <h2 id="tituloRecuerdos">
+                Mis primeros recuerdos 💗
+            </h2>
+
+            <p class="descripcion">
+                Guarda aquí las fotografías y momentos
+                especiales de esta etapa.
+            </p>
+
+
+            <div class="foto-destacada">
+
+                <div class="espacio-foto">
+
+                    <span>📷</span>
+
+                    <h3>Agregar un recuerdo</h3>
+
+                    <label for="fechaFoto">
+                        📅 Fecha
+                    </label>
+
+                    <input
+                        type="date"
+                        id="fechaFoto"
+                    >
+
+
+                    <label for="descripcionFoto">
+                        💕 Recuerdo
+                    </label>
+
+                    <textarea
+                        id="descripcionFoto"
+                        placeholder="Escribe algo especial sobre esta fotografía..."
+                    ></textarea>
+
+
+                    <input
+                        type="file"
+                        id="inputFotoAlbum"
+                        accept="image/*"
+                        hidden
+                    >
+
+                    <button
+                        class="boton-agregar"
+                        onclick="seleccionarFotoAlbum()"
+                    >
+                        ＋ Agregar fotografía
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="seccion-galeria">
+
+                <h2>Nuestros recuerdos ✨</h2>
+
+                <div id="galeriaAlbum" class="galeria-fotos">
+
+                    <div id="mensajeGaleriaAlbum" class="galeria-vacia">
+
+                        <span>🌸</span>
+
+                        <p>
+                            Aquí aparecerán las fotografías
+                            guardadas de esta etapa.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Un pedacito de nuestra historia 💗</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

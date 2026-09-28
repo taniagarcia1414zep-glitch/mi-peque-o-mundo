@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi pequeño mundo 💕</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="portada">
+
+        <div class="contenido-portada">
+
+            <p class="subtitulo">✨ Nuestro pequeño tesoro ✨</p>
+
+            <h1>Mi pequeño mundo</h1>
+
+            <p class="mensaje">
+                Cada fotografía guarda un pedacito de tu historia 💕
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="album">
+
+            <h2>Mi historia mes a mes 🌸</h2>
+
+            <p class="descripcion">
+                Guarda aquí todos esos momentos que queremos recordar para siempre.
+            </p>
+
+
+            <div class="meses">
+
+                <div class="tarjeta tarjeta-especial" onclick="abrirAlbum('embarazo')">
+    <span>🤰💕</span>
+    <h3>Antes de conocerte</h3>
+    <p>
+        Nuestra historia comenzó mucho antes de tenerte
+        entre nuestros brazos.
+    </p>
+</div>
+
+                <div class="tarjeta" onclick="abrirAlbum('nacimiento')">
+                    <span>🍼</span>
+                    <h3>Mi nacimiento</h3>
+                    <p>El día que comenzó nuestra aventura.</p>
+                </div>
+
+                <div class="tarjeta" onclick="abrirAlbum('1-mes')">
+                    <span>🌙</span>
+                    <h3>1 mes</h3>
+                    <p>Mis primeros momentos.</p>
+                </div>
+
+               <div class="tarjeta" onclick="abrirAlbum('2-meses')">
+    <span>🌸</span>
+    <h3>2 meses</h3>
+    <p>Creciendo un poquito más.</p>
+</div>
+
+                <div class="tarjeta" onclick="abrirAlbum('3-meses')">
+    <span>🧸</span>
+    <h3>3 meses</h3>
+    <p>Nuevas aventuras.</p>
+</div>
+<div class="tarjeta" onclick="abrirAlbum('4-meses')">
+    <span>🌷</span>
+    <h3>4 meses</h3>
+    <p>Momentos para recordar.</p>
+</div>
+
+<div class="tarjeta" onclick="abrirAlbum('5-meses')">
+    <span>🦋</span>
+    <h3>5 meses</h3>
+    <p>Descubriendo el mundo.</p>
+</div>
+
+<div class="tarjeta" onclick="abrirAlbum('6-meses')">
+    <span>🎀</span>
+    <h3>6 meses</h3>
+    <p>Medio año de amor.</p>
+</div>
+
+            </div>
+ 
+        </section>
+
+    </main>
+    <div class="contenedor-cerrar-sesion">
+    <button class="boton-cerrar-sesion" onclick="cerrarSesion()">
+        🔒 Cerrar sesión
+    </button>
+</div>
+
+<footer>
+    <p>Hecho con mucho amor 💗</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
